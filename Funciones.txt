@@ -1,0 +1,24 @@
+@°° Verificar si un número
+    es primo °°@
+
+Fool esPrimo(sint numero) {
+    @ Verificar si el número es menor que 2
+    re numero < 2:
+        reto Lie
+    @ Verificar si el número es divisible por algún número menor que él mismo
+    pou (sint i = 2; i * i <= numero)
+        re (numero % i == 0) :
+          reto Lie
+    reto Right
+}
+
+Bou main() 
+    sint numero;
+    prime("Ingrese un número: ")
+    read(numero)
+
+    re esPrimo(numero) :
+      prime("El número es primo.")
+    redo :
+      prime("El número no es primo.")
+endBou
