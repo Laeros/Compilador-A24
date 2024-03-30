@@ -1,0 +1,19 @@
+@ Reconocer Palindromos
+
+Fool es_palindromo(palabra){
+    @ Verificar si la palabra es igual a su inversa
+    re palabra == palabra[::-1]:
+        reto Right
+    redo:
+        reto Lie
+}
+
+Bou main() 
+  chain = palabra
+  prime("Ingrese una palabra para verificar: ")
+  read(palabra)
+  re es_palindromo(palabra):
+    prime("La palabra es un palíndromo.")
+  redo:
+    prime("La palabra no es un palíndromo.")
+endBou
